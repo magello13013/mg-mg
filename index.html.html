@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Veículos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #004aad;
+      padding: 10px;
+      text-align: center;
+    }
+    header img {
+      max-height: 80px;
+    }
+    .banner {
+      width: 100%;
+      height: auto;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #004aad;
+    }
+    .benefits, .sobre, .formulario, .contato {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      padding-left: 20px;
+    }
+    form input, form button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+    form button {
+      background-color: #004aad;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+    .imagem-extra {
+      width: 100%;
+      height: auto;
+      border-radius: 0;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg.jpeg" alt="Logo Conecta Veículos">
+  </header>
+  <img class="banner" src="baner.jpg" alt="Banner Conecta Veículos">
+
+  <div class="container">
+
+    <div class="benefits">
+      <h2>Por que trabalhar com a Conecta Veículos?</h2>
+      <ul>
+        <li>Pagamento justo e sempre em dia</li>
+        <li>Suporte total ao motorista</li>
+        <li>Serviço estável e com alta demanda</li>
+        <li>Respeito e valorização profissional</li>
+      </ul>
+    </div>
+
+    <div class="sobre">
+      <h2>Sobre a Conecta Veículos</h2>
+      <p>Estamos há mais de 10 anos no setor de transporte, conectando motoristas e criando oportunidades sólidas. Prestamos serviço para diversas empresas reconhecidas no mercado, oferecendo estabilidade e confiança para quem trabalha com a gente.</p>
+    </div>
+
+    <div class="formulario">
+      <h2>Cadastre-se para trabalhar com a gente</h2>
+      <p>Preencha o formulário abaixo. Após o envio, você verá a mensagem de confirmação. Simples, rápido e sem compromisso!</p>
+      <form onsubmit="return mostrarMensagem()">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <p id="mensagem" style="color: green; display: none;">Cadastro realizado com sucesso!</p>
+    </div>
+
+    <div class="contato">
+      <h2>Entre em contato pelo WhatsApp</h2>
+      <p>Fale com a gente diretamente no WhatsApp para tirar dúvidas ou saber mais detalhes.</p>
+      <a class="whatsapp-button" href="https://wa.me/554797313424" target="_blank">Falar no WhatsApp</a>
+    </div>
+
+    <img src="" class="imagem-extra" alt="">
+
+  </div>
+
+  <script>
+    function mostrarMensagem() {
+      document.getElementById('mensagem').style.display = 'block';
+      return false;
+    }
+  </script>
+</body>
+</html>
